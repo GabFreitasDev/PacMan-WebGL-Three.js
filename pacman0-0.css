@@ -1,0 +1,80 @@
+/* Não há CSS específico para os elementos do jogo (Pac-Man, fantasmas, pontos) */
+/* Eles são desenhados diretamente no canvas com WebGL */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-color: #222;
+}
+
+#game-canvas {
+    background-color: #000;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    color: yellow;
+}
+
+.score-container {
+    font-size: 1.2em;
+}
+
+.controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.game-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    text-align: center;
+}
+
+.game-message h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.game-message p {
+    font-size: 1.5em;
+}

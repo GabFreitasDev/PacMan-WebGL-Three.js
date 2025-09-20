@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman WebGL</title>
+    <link rel="stylesheet" href="./pacman0-0.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>PACMAN</h1>
+            <div class="score-container">
+                <span>Pontuação: </span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        
+        <canvas id="game-canvas"></canvas>
+        
+        <div class="controls">
+            <p>Use as setas do teclado para mover</p>
+            <button id="start-btn">Iniciar Jogo</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script src="./pacman0-0.js"></script>
+</body>
+</html>
